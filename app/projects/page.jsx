@@ -5,21 +5,17 @@ export default function ProjectsPage() {
   ];
 
   return (
-    <main className="mx-auto max-w-3xl p-6 space-y-6">
-      <h1 className="text-3xl font-semibold">Projects</h1>
-      <ul className="grid gap-4 sm:grid-cols-2">
+    <main style={{ maxWidth: "48rem", margin: "2rem auto", padding: "0 1.5rem" }}>
+      <h1 style={{ fontSize: "2rem", marginBottom: "1rem" }}>Projects</h1>
+      <ul>
         {items.map((p) => (
-          <li key={p.title} className="rounded-xl border p-4">
-            <h3 className="font-medium">{p.title}</h3>
-            <p className="text-neutral-600">{p.status}</p>
+          <li key={p.title} style={{ marginBottom: "0.75rem" }}>
+            <strong>{p.title}</strong> – {p.status}
           </li>
         ))}
       </ul>
-
-      <p>
-        <a href="/" className="underline">
-          Back to home
-        </a>
+      <p style={{ marginTop: "1.5rem" }}>
+        <a href="/">Back to home</a>
       </p>
     </main>
   );
