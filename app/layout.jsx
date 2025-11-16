@@ -1,6 +1,7 @@
-import "../styles/globals.css";
-// or: import "../styles/tailwind.css";
-// or: import "./globals.css";
+import "./globals.css";
+import "../styles/main.css";
+
+
 
 export const metadata = {
   title: "K. Hudson – Author",
